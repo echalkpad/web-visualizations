@@ -1133,7 +1133,7 @@
         var div = '<div class="omh-tooltip" data-datapoint-id="' + d.omhDatum.header.id + '" ';
 
         if( interfaceSettings.tooltips.link ) {
-          var url = interfaceSettings.tooltips.link.replace( '{measurementId}', d.omhDatum.header.id );
+          var url = interfaceSettings.tooltips.link.replace( '{datapointId}', d.omhDatum.header.id );
           div += ' onclick="location.href=\'' + url + '\'; return false;" ';
         }
 
